@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+/*navigation bar*/
+.adminNavBar{
+    background-color: #4161B7;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    position: sticky;
+    padding: 10px;
+    gap: 10px;
+    min-height: 100vh;
+    
+}
+.adminInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.adminInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.adminSetting{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+    width: 50%;
+    /* background-color: pink; */
+}
+.adminName{
+    font-weight: bold;
+    
+}
+.role{
+    font-size: 15px;
+    color:#C8C5C5;
+}
+.adminSetting a{
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    width: 50%;
+    background-color: #F16C64;
+    font-size: 11px;
+    border-radius: 5px;
+    text-align: center;
+}
+.adminSetting a:hover{
+    background-color: #f79f9a;
+
+}
+
+.adminNavLink{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.adminNavLink a{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.adminNavLink a:hover{
+    background-color: rgb(139, 139, 189);
+    border-radius: 5px;
+    transition: 0.5s;
+   
+}
+.adminIcon{
+    color: white;
+   
+}
+
+/*Dashboard*/
+.dashboardContainer{
+    background-color: rgb(4, 4, 60);
+    display: flex;
+    flex-direction: row;
+}
+/*Admin Campaign/SocialMedia/Technique/Suggestion/Participation*/
+.campaignMainContainer{
+    width: 100%;
+    margin: 10px;
+}
+.adminCamHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
+.actionContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput{
+    border: none;
+    background-color: #B6C2E3;
+    padding: 10px;
+    width: 500px;
+    height: 40px;
+    color: black;
+    border-radius: 10px;
+}
+.searchButton{
+    background-color: #607BC3 ;
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+
+}
+.searchButton:hover{
+    background-color:#154eed ;
+}
+.actionContainer a{
+    text-decoration: none;
+    background-color: #0E8D89;
+    padding: 5px;
+    border-radius: 10px;
+    width: 90px;
+    text-align: center;
+    font-size: 13px;
+}
+.actionContainer a:hover{
+    background-color: #a7d4d3;
+    color: rgb(44, 15, 170);
+    font-weight: 600;
+    transition: 0.5s;
+}
+.campaignTableContainer{
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 40px;
+}
+.campaingListContainer{
+    background-color: rgb(183, 195, 233);
+    width: 400px;
+    padding: 10px;
+    gap:15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 0 20px 0;
+    
+}
+.campaingListContainer p{
+    color: black;
+
+}
+.campaingListContainer span{
+    color: black;
+    font-weight: bold;
+}
+
+/*Login and Register*/
+.adminLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.adminLoginContainer{
+    background-color: rgba(199, 198, 202, 0.2);
+   min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  min-height: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.adminLoginContainer h2{
+    color: black;
+}
+.adminLoginLine{
+  height: 50px;
+}
+.adminLoginLine label{
+    color: black;
+}
+.loginInput {
+    padding: 10px;
+    border-radius: 6px;
+    width: 250px;
+    color: black;
+}
+.checkbox{
+    display: flex;
+    gap:5px;
+}
+.checkbox p{
+    color: black;
+}
+.loginBtn{
+    padding: 10px;
+    border-radius: 6px;
+    width: 150px;
+    color: black;
+}
+.loginBtn:hover{
+    background-color: rgb(85, 197, 235);
+}
+.adminLoginButton{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.adminLoginButton a{
+    color: rgb(4, 4, 47);
+}
+.adminLoginButton a:hover{
+    color: rgb(95, 95, 230);
+}
+
+/*admin Forms*/
+.camTypeMainContainer {
+    display: flex;
+    flex-direction: column;
+   
+ 
+    gap: 20px;
+  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.camTypeFormConatiner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+
+}
+
+.textInput {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    color: black;
+}
+.option{
+    color: black;
+}
+.selection {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    color: black;
+}
+
+.radioButton {
+    display: flex;
+    gap: 10px;
+}
+
+.radioButton div {
+    display: flex;
+    align-items: center;
+}
+
+.radioButton input[type="radio"] {
+    margin-right: 10px;
+}
+
+.camInputContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.camInput {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.camInput:hover {
+    background-color: #063e7b;
+}
+.photo{
+    color: white;
+}
+/*Edit and Delete*/
+.editDContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.editBtn,
+.deleteBtn
+{
+    text-decoration: none;
+   width: 80px;
+   padding: 4px;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+}
+.editBtn{
+    background-color: lightblue;
+}
+.deleteBtn{
+    background-color: #F16C64;
+}
+.editBtn:hover{
+    background-color: rgb(70, 167, 200);
+}
+.deleteBtn:hover{
+    background-color: #e32c23;
+}
